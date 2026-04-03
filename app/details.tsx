@@ -1,13 +1,46 @@
-import { useLocalSearchParams } from "expo-router";
+import { Stack, useLocalSearchParams } from "expo-router";
 import React from "react";
-import { Text, View } from "react-native";
+import { ScrollView, Text } from "react-native";
 
 const details = () => {
   const { name } = useLocalSearchParams();
   return (
-    <View>
-      <Text>{name}</Text>
-    </View>
+    <>
+      <Stack.Screen options={{ title: name as string }} />
+      <ScrollView className=" bg-rose-700 flex-1">
+        <Text>{name}</Text>
+        <Text>{name}</Text>
+        <Text>{name}</Text>
+        <Text>{name}</Text>
+        <Text>{name}</Text>
+        <Text>{name}</Text>
+        <Text>{name}</Text>
+        <Text>{name}</Text>
+        <Text>{name}</Text>
+        <Text>{name}</Text>
+        <Text>{name}</Text>
+        <Text>{name}</Text>
+        <Text>{name}</Text>
+        <Text>{name}</Text>
+        <Text>{name}</Text>
+        <Text>{name}</Text>
+        <Text>{name}</Text>
+        <Text>{name}</Text>
+        <Text>{name}</Text>
+        <Text>{name}</Text>
+        <Text>{name}</Text>
+        <Text>{name}</Text>
+        <Text>{name}</Text>
+        <Text>{name}</Text>
+        <Text>{name}</Text>
+        <Text>{name}</Text>
+        <Text>{name}</Text>
+        <Text>{name}</Text>
+        <Text>{name}</Text>
+        <Text>{name}</Text>
+        <Text>{name}</Text>
+      </ScrollView>
+    </>
   );
 };
 
